@@ -18,4 +18,5 @@ Highlights cloud-native deployment skills and connects to my experience with AWS
 
 ## 📫 Contact
 - GitHub: [https://github.com/aronbariagabr](https://github.com/aronbariagabr)
-- Email: aron@example.com
+- Email: bariagabra@gmail.com
+

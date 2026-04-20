@@ -20,6 +20,7 @@ Containerized Spring Boot application using Docker. Demonstrates cloud‑native 
 
 ## 🚀 Features
 - Dockerfile for building container images  
+- Docker Compose for multi‑service orchestration (Spring Boot + PostgreSQL)  
 - Ready for Kubernetes deployment  
 - Lightweight and portable backend service  
 
@@ -35,10 +36,12 @@ Highlights cloud‑native deployment skills and connects to my experience with A
 docker-springboot-demo/
 │── README.md
 │── Dockerfile
+│── docker-compose.yml
+│── pom.xml
 │── src/
 │   └── main/java/... (Spring Boot app)
 │── target/
-│   └── build artifacts
+│   └── patient-api.jar
 
 ##⚡ Quickstart
 Build and run with Docker:

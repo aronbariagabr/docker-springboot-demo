@@ -48,29 +48,48 @@ Build and run with Docker:
 
 docker build -t springboot-demo .
 docker run -p 8080:8080 springboot-demo
-Access the application at:  
-http://localhost:8080
+
 
 ## 🗂 Architecture Diagram
-┌───────────────┐      ┌───────────────┐
-│   Spring Boot │ ---> │   Dockerized   │
-│   Application │      │   Container    │
-└───────────────┘      └───────────────┘
-             │
-             ▼
-┌─────────────────────┐
-│   Cloud Deployment  │
-│ (AWS / Azure / K8s) │
-└─────────────────────┘
+┌───────────────────────────────┐
+│       Spring Boot App         │
+│   (Java, REST Controllers)    │
+└───────────────┬───────────────┘
+                │
+┌───────────────┴───────────────┐
+│        Docker Container       │
+│   (Dockerfile, Image Build)   │
+└───────────────┬───────────────┘
+                │
+┌───────────────┴───────────────┐
+│    Docker Compose Orchestration│
+│   (App + PostgreSQL Service)   │
+└───────────────┬───────────────┘
+                │
+┌───────────────┴───────────────┐
+│     Cloud Deployment Layer     │
+│   (AWS ECS, Azure, Kubernetes) │
+└───────────────────────────────┘
+
 
 ## 🔄 Workflow
-1.Write Spring Boot service
-2.Containerize with Dockerfile
-3.Build and run locally
-4.Deploy to Kubernetes / cloud
+1. Write Spring Boot service  
+2. Containerize with Dockerfile  
+3. Build and run locally  
+4. Deploy to Kubernetes / cloud  
+
 
 ## 🌱 Future Work
-Add CI/CD pipeline integration (GitHub Actions / Jenkins)
-Provide Helm charts for Kubernetes deployment
-Extend with monitoring (Prometheus, Grafana)
+┌───────────────────────────────────────────────┐
+│                 FUTURE WORK                   │
+├───────────────────────────────────────────────┤
+│ • Add CI/CD pipeline integration              │
+│   (GitHub Actions / Jenkins)                  │
+│                                               │
+│ • Provide Helm charts for Kubernetes          │
+│   deployment                                  │
+│                                               │
+│ • Extend with monitoring                      │
+│   (Prometheus, Grafana)                       │
+└───────────────────────────────────────────────┘
 

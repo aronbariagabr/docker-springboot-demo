@@ -1,22 +1,73 @@
 # Docker Spring Boot Demo
 
+![Java](https://img.shields.io/badge/Java-SpringBoot-orange.svg)
+![Docker](https://img.shields.io/badge/Docker-Containerization-blue.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
+
+---
+
 ## 📊 Overview
-Containerized Spring Boot application using Docker. Demonstrates cloud-native deployment and DevOps practices.
+Containerized Spring Boot application using Docker. Demonstrates cloud‑native deployment and DevOps practices.
+
+---
 
 ## 🛠️ Tech Stack
-- Java
-- Spring Boot
-- Docker
+- Java  
+- Spring Boot  
+- Docker  
+
+---
 
 ## 🚀 Features
-- Dockerfile for building container images
-- Ready for Kubernetes deployment
-- Lightweight and portable backend service
+- Dockerfile for building container images  
+- Ready for Kubernetes deployment  
+- Lightweight and portable backend service  
+
+---
 
 ## 🎯 Purpose
-Highlights cloud-native deployment skills and connects to my experience with AWS, Azure, and Kubernetes.
+Highlights cloud‑native deployment skills and connects to my experience with AWS, Azure, and Kubernetes.
 
-## 📫 Contact
-- GitHub: [https://github.com/aronbariagabr](https://github.com/aronbariagabr)
-- Email: bariagabra@gmail.com
+---
+
+## 📁 Repository Structure
+```text
+docker-springboot-demo/
+│── README.md
+│── Dockerfile
+│── src/
+│   └── main/java/... (Spring Boot app)
+│── target/
+│   └── build artifacts
+
+##⚡ Quickstart
+Build and run with Docker:
+
+docker build -t springboot-demo .
+docker run -p 8080:8080 springboot-demo
+Access the application at:  
+http://localhost:8080
+
+## 🗂 Architecture Diagram
+┌───────────────┐      ┌───────────────┐
+│   Spring Boot │ ---> │   Dockerized   │
+│   Application │      │   Container    │
+└───────────────┘      └───────────────┘
+             │
+             ▼
+┌─────────────────────┐
+│   Cloud Deployment  │
+│ (AWS / Azure / K8s) │
+└─────────────────────┘
+
+## 🔄 Workflow
+1.Write Spring Boot service
+2.Containerize with Dockerfile
+3.Build and run locally
+4.Deploy to Kubernetes / cloud
+
+## 🌱 Future Work
+Add CI/CD pipeline integration (GitHub Actions / Jenkins)
+Provide Helm charts for Kubernetes deployment
+Extend with monitoring (Prometheus, Grafana)
 

@@ -1,4 +1,0 @@
-FROM openjdk:17-jdk-slim
-WORKDIR /app
-COPY target/patient-api.jar patient-api.jar
-ENTRYPOINT ["java", "-jar", "patient-api.jar"]

@@ -52,7 +52,6 @@ docker run -p 8080:8080 springboot-demo
 ### 🏗️ Box‑Style Architecture Diagram
 
 ```markdown
-## 🏗️ Architecture Diagram  
 ┌───────────────────────────────┐
 │       Spring Boot App         │
 │   (Java, REST Controllers)    │

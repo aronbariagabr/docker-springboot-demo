@@ -49,7 +49,7 @@ Build and run with Docker:
 docker build -t springboot-demo .
 docker run -p 8080:8080 springboot-demo
 
-### 🏗️ Box‑Style Architecture Diagram
+## 🏗️ Box‑Style Architecture Diagram
 ```markdown
 ┌───────────────────────────────┐
 │       Spring Boot App         │

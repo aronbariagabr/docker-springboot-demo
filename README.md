@@ -70,7 +70,7 @@ docker run -p 8080:8080 springboot-demo
 │     Cloud Deployment Layer     │
 │   (AWS ECS, Azure, Kubernetes) │
 └───────────────────────────────┘
-```
+
 ## 🌱 Future Work
 ┌───────────────────────────────────────────────┐
 │                 FUTURE WORK                   │

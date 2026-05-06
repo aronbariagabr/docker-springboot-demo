@@ -70,7 +70,7 @@ docker run -p 8080:8080 springboot-demo
 │     Cloud Deployment Layer     │
 │   (AWS ECS, Azure, Kubernetes) │
 └───────────────────────────────┘
-
+```
 ## 🌱 Future Work
 ┌───────────────────────────────────────────────┐
 │                 FUTURE WORK                   │
@@ -90,6 +90,7 @@ docker run -p 8080:8080 springboot-demo
 2. Containerize with Dockerfile  
 3. Build and run locally  
 4. Deploy to Kubernetes / cloud  
+
 ```
 
 ## 🏗️ Architecture Diagram (Mermaid)

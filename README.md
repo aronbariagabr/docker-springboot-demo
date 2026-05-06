@@ -71,14 +71,6 @@ docker run -p 8080:8080 springboot-demo
 │   (AWS ECS, Azure, Kubernetes) │
 └───────────────────────────────┘
 
-
-## 🔄 Workflow
-1. Write Spring Boot service  
-2. Containerize with Dockerfile  
-3. Build and run locally  
-4. Deploy to Kubernetes / cloud  
-
-
 ## 🌱 Future Work
 ┌───────────────────────────────────────────────┐
 │                 FUTURE WORK                   │
@@ -92,4 +84,19 @@ docker run -p 8080:8080 springboot-demo
 │ • Extend with monitoring                      │
 │   (Prometheus, Grafana)                       │
 └───────────────────────────────────────────────┘
+
+## 🔄 Workflow
+1. Write Spring Boot service  
+2. Containerize with Dockerfile  
+3. Build and run locally  
+4. Deploy to Kubernetes / cloud  
+```
+
+## 🏗️ Architecture Diagram (Mermaid)
+
+```mermaid
+flowchart TD
+    A[Spring Boot App\n(Java, REST Controllers)] --> B[Docker Container\n(Dockerfile, Image Build)]
+    B --> C[Docker Compose Orchestration\n(App + PostgreSQL Service)]
+    C --> D[Cloud Deployment Layer\n(AWS ECS, Azure, Kubernetes)]
 

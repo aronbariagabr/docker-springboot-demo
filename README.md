@@ -101,4 +101,17 @@ flowchart TD
     B --> C[Docker Compose Orchestration\nApp + PostgreSQL Service]
     C --> D[Cloud Deployment Layer\nAWS ECS, Azure, Kubernetes]
 
+    %% Define four unique color classes
+    classDef spring fill:#ffcc00,stroke:#333,stroke-width:2px;
+    classDef docker fill:#00ccff,stroke:#333,stroke-width:2px;
+    classDef compose fill:#66ff66,stroke:#333,stroke-width:2px;
+    classDef cloud fill:#ff6666,stroke:#333,stroke-width:2px;
+
+    %% Apply classes to each box
+    class A spring;
+    class B docker;
+    class C compose;
+    class D cloud;
+
+
 

@@ -98,7 +98,8 @@ docker run -p 8080:8080 springboot-demo
 ```mermaid
 flowchart TD
     A[Spring Boot App\nJava
-REST Controllers] --> B[Docker Container\nDockerfile, Image Build]
+REST Controllers] --> B[Docker Container\nDockerfile,
+Image Build]
     B --> C[Docker Compose Orchestration\nApp + PostgreSQL Service]
     C --> D[Cloud Deployment Layer\nAWS ECS, Azure, Kubernetes]
 
